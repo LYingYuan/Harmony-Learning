@@ -1,0 +1,9 @@
+<div class="container" on:swipe="NextCity">
+    <text class="city">{{city}}</text>
+    <div class="weather">
+       <image class="img" src="../images/ic_weather.png"></image>
+        <text class="weather_data">多云</text>
+    </div>
+    <text class="temperature">7~9℃</text>
+    <text class="tips">上下滑动查看下一个城市</text>
+</div>

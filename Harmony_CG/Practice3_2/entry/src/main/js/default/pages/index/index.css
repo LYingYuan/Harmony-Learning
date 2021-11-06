@@ -1,0 +1,108 @@
+.w {
+    width: 360px;
+    height: 567px;
+    background-color: #e9ecf1;
+}
+
+.head {
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+/* justify-content: flex-end; */
+    align-items: center;
+    padding-right: 5px;
+}
+
+.settings {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.settings:active {
+    background-color: #d3d7da;
+}
+
+.screen {
+    height: 150px;
+}
+
+.btns {
+    padding-top: 15px;
+    height: 100%;
+    background-color: #f2f3f5;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+/*    grid-template: repeat(6, 1fr) / repeat(4, 1fr);*/
+}
+
+.circle-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1.5px solid rgba(240, 240, 240);
+}
+
+.btn-white-black {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn-white-gray {
+    background-color: rgb(255, 255, 255);
+    color: #646464;
+}
+
+.btn-white-blue {
+    background-color: rgb(255, 255, 255);
+    color: #0a58f6;
+}
+
+.btn-blue-white {
+    background-color: #0a58f6;
+    color: rgb(255, 255, 255);
+}
+
+.btn-animation:active {
+    background-color: rgba(240, 240, 240);
+}
+
+.btn-1 {
+    height: 175px;
+/*    grid-column: 4 / 5;*/
+/*    grid-row: 5 / 7;*/
+
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("/common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}
