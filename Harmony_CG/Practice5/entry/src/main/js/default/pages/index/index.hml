@@ -1,5 +1,46 @@
 <div class="container">
-    <text class="title">
-        {{ $t('strings.hello') }} {{ title }}
-    </text>
+    <div class="head">
+        <button class="settings">: :</button>
+    </div>
+    <div class="screen">
+    <!-- 上一条运算记录 -->
+        <div class="calc-history"></div>
+    <!-- 输入的数据 -->
+        <div class="calc-in"></div>
+    <!-- 输出的运算结果 -->
+        <div class="calc-out active"></div>
+    </div>
+    <div class="btns">
+        <div class="column_1">
+            <button class="circle-btn btn-animation btn-white-gray">MC</button>
+            <button class="circle-btn btn-animation btn-white-blue">C</button>
+            <button class="circle-btn btn-animation btn-white-black">7</button>
+            <button class="circle-btn btn-animation btn-white-black">4</button>
+            <button class="circle-btn btn-animation btn-white-black">1</button>
+            <button class="circle-btn btn-animation btn-white-black">%</button>
+        </div>
+        <div class="column_2">
+            <button class="circle-btn btn-animation btn-white-gray">M+</button>
+            <button class="circle-btn btn-animation btn-white-blue">÷</button>
+            <button class="circle-btn btn-animation btn-white-black">8</button>
+            <button class="circle-btn btn-animation btn-white-black">5</button>
+            <button class="circle-btn btn-animation btn-white-black">2</button>
+            <button class="circle-btn btn-animation btn-white-black">0</button>
+        </div>
+        <div class="column_3">
+            <button class="circle-btn btn-animation btn-white-gray">MR</button>
+            <button class="circle-btn btn-animation btn-white-blue">×</button>
+            <button class="circle-btn btn-animation btn-white-black">9</button>
+            <button class="circle-btn btn-animation btn-white-black">6</button>
+            <button class="circle-btn btn-animation btn-white-black">3</button>
+            <button class="circle-btn btn-animation btn-white-black">.</button>
+        </div>
+        <div class="column_4">
+            <button class="circle-btn btn-animation btn-white-gray">M-</button>
+            <button class="circle-btn btn-animation btn-white-blue">删除</button>
+            <button class="circle-btn btn-animation btn-white-blue">-</button>
+            <button class="circle-btn btn-animation btn-white-blue">+</button>
+            <button class="circle-btn btn-animation btn-1 btn-blue-white">=</button>
+        </div>
+    </div>
 </div>
