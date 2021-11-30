@@ -3,44 +3,44 @@
         <button class="settings">: :</button>
     </div>
     <div class="screen">
-    <!-- 上一条运算记录 -->
-        <div class="calc-history"></div>
-    <!-- 输入的数据 -->
-        <div class="calc-in"></div>
-    <!-- 输出的运算结果 -->
-        <div class="calc-out active"></div>
+        <!-- 上一条运算记录 -->
+        <div style="height: 30%;"><text class="calc-history">{{ calc_history }}</text></div>
+        <!-- 输入的数据 -->
+        <div style="height: 30%;"><text class="calc-in">{{ calc_in }}</text></div>
+        <!-- 输出的运算结果 -->
+        <div style="height: 40%;"><text class="calc-out active">{{ calc_out }}</text></div>
     </div>
     <div class="btns">
         <div class="column_1">
-            <button class="circle-btn btn-animation btn-white-gray">MC</button>
-            <button class="circle-btn btn-animation btn-white-blue">C</button>
-            <button class="circle-btn btn-animation btn-white-black">7</button>
-            <button class="circle-btn btn-animation btn-white-black">4</button>
-            <button class="circle-btn btn-animation btn-white-black">1</button>
-            <button class="circle-btn btn-animation btn-white-black">%</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-gray" value="MC">MC</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-blue" value="C">C</button>
+            <button onclick="onClick7" class="circle-btn btn-animation btn-white-black" value="7">7</button>
+            <button onclick="onClick4" class="circle-btn btn-animation btn-white-black" value="4">4</button>
+            <button onclick="onClick1" class="circle-btn btn-animation btn-white-black" value="1">1</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-black" value="%">%</button>
         </div>
         <div class="column_2">
-            <button class="circle-btn btn-animation btn-white-gray">M+</button>
-            <button class="circle-btn btn-animation btn-white-blue">÷</button>
-            <button class="circle-btn btn-animation btn-white-black">8</button>
-            <button class="circle-btn btn-animation btn-white-black">5</button>
-            <button class="circle-btn btn-animation btn-white-black">2</button>
-            <button class="circle-btn btn-animation btn-white-black">0</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-gray" value="M+">M+</button>
+            <button onclick="onClick13" class="circle-btn btn-animation btn-white-blue" value="/">÷</button>
+            <button onclick="onClick8" class="circle-btn btn-animation btn-white-black" value="8">8</button>
+            <button onclick="onClick5" class="circle-btn btn-animation btn-white-black" value="5">5</button>
+            <button onclick="onClick2" class="circle-btn btn-animation btn-white-black" value="2">2</button>
+            <button onclick="onClick0" class="circle-btn btn-animation btn-white-black" value="0">0</button>
         </div>
         <div class="column_3">
-            <button class="circle-btn btn-animation btn-white-gray">MR</button>
-            <button class="circle-btn btn-animation btn-white-blue">×</button>
-            <button class="circle-btn btn-animation btn-white-black">9</button>
-            <button class="circle-btn btn-animation btn-white-black">6</button>
-            <button class="circle-btn btn-animation btn-white-black">3</button>
-            <button class="circle-btn btn-animation btn-white-black">.</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-gray" value="MR">MR</button>
+            <button onclick="onClick12" class="circle-btn btn-animation btn-white-blue" value="*">×</button>
+            <button onclick="onClick9" class="circle-btn btn-animation btn-white-black" value="9">9</button>
+            <button onclick="onClick6" class="circle-btn btn-animation btn-white-black" value="6">6</button>
+            <button onclick="onClick3" class="circle-btn btn-animation btn-white-black" value="3">3</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-black" value=".">.</button>
         </div>
         <div class="column_4">
-            <button class="circle-btn btn-animation btn-white-gray">M-</button>
-            <button class="circle-btn btn-animation btn-white-blue">删除</button>
-            <button class="circle-btn btn-animation btn-white-blue">-</button>
-            <button class="circle-btn btn-animation btn-white-blue">+</button>
-            <button class="circle-btn btn-animation btn-1 btn-blue-white">=</button>
+            <button onclick="onClick" class="circle-btn btn-animation btn-white-gray" value="M-">M-</button>
+            <button onclick="onClick15" class="circle-btn btn-animation btn-white-blue" value="Del">删除</button>
+            <button onclick="onClick11" class="circle-btn btn-animation btn-white-blue" value="-">-</button>
+            <button onclick="onClick10" class="circle-btn btn-animation btn-white-blue" value="+">+</button>
+            <button onclick="onClick14" class="circle-btn btn-animation btn-1 btn-blue-white" value="equal">=</button>
         </div>
     </div>
 </div>
